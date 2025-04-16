@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Contact | Afghanistan Attractions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+
+  <body>
+    <!-- start header -->
+    <header>
+      <div class="header">
+        <nav class="navigation">
+          <img
+            src="assets/images/logo.jpg"
+            alt="Afghanistan Attractions"
+            class="logo"
+          />
+          <a href="index.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="contact.html">CONTACT</a>
+          <a href="gallery.html">GALLERY</a>
+
+          <form class="search-form" action="/search" method="GET">
+            <input type="search" name="q" placeholder="Search..." />
+            <button type="submit">Go</button>
+          </form>
+        </nav>
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- start main -->
+    <main>
+      <div class="contact">
+
+        <!-- start contact section -->
+        <section class="contactus">
+          <h2>Contact Us</h2>
+          <p>
+            We’d love to hear from you! <br />
+            Whether you have a question, suggestion, feedback, opinion, or just
+            want to say hello, feel free to reach out.
+            <br />
+            You can contact us through the form below or by email. We welcome
+            contributions, stories, corrections, and collaborations that help us
+            showcase Afghanistan in the best light possible.
+            <br />
+            Email:
+            <a href="mailto:fatima.rahmani79@gmail.com"
+              >fatima.rahmani79@gmail.com</a
+            >
+            <br />
+            Thank you for being a part of this journey.
+          </p>
+        </section>
+        <!-- end contact section -->
+
+        <!-- start contactform section -->
+        <section class="contactform">
+          <form action="#">
+            <label for="name">Name:</label> <br />
+            <input type="text" id="name" name="name" required class="inp" />
+            <br />
+            <label for="email">Email:</label> <br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="inp"
+            /><br />
+            <label for="message">Message:</label> <br />
+            <textarea
+              id="message"
+              name="message"
+              required
+              class="inp"
+            ></textarea>
+            <br />
+            <label for="gender">Gender:</label> <br />
+            <input type="radio" id="male" name="gender" value="Mele" />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female" />
+            <label for="female">Female</label> <br />
+            <br />
+            <input type="submit" value="Send" id="send" />
+            <br />
+          </form>
+        </section>
+        <!-- end contactform section -->
+
+      </div>
+    </main>
+    <!-- end main -->
+
+    <!-- start footer -->
+    <footer class="footer">
+      <section>
+        <ul>
+          <li>
+            <img src="assets/images/instagram-brands-solid.svg" alt="" /><a
+              href="https://www.instagram.com/afghanistanattractions/"
+              >Instagram
+            </a>
+          </li>
+          <li>
+            <img src="assets/images/facebook-brands.svg" alt="" /><a
+              href="https://www.facebook.com/afghanistanattractions/"
+              >Facebook
+            </a>
+          </li>
+          <li>
+            <img src="assets/images/x-twitter-brands.svg" alt="" />
+            <a href="https://www.twitter.com/afghanistanattractions/"
+              >X-Twitter
+            </a>
+          </li>
+          <li>
+            <img src="assets/images/square-pinterest-brands.svg" alt="" />
+            <a href="https://www.pinterest.com/afghanistanattractions/"
+              >Pinterest
+            </a>
+          </li>
+        </ul>
+        <p id="footer">
+          &copy; 2023 Afghanistan Attractions. All rights reserved.
+        </p>
+      </section>
+    </footer>
+    <!-- end footer -->
+
+  </body>
+</html>

@@ -1,0 +1,286 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Flex";
+  color: #252525;
+}
+
+/*start header style */
+nav {
+  background-color: #025e43;
+  color: white;
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  
+}
+
+img.logo {
+  height: 100px;
+  width: 120px;
+  margin-right: 40px;
+}
+
+nav a {
+  color: white;
+  font-size: 22px;
+  font-weight: 400;
+  text-decoration: none;
+  margin-right: 60px;
+  background-color: inherit;
+  padding: 20px 0px;
+}
+
+.search-form {
+  margin-left: auto; 
+  display: flex;
+  align-items: center;
+}
+
+.search-form input[type="search"] {
+  padding: 8px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 16px;
+}
+
+.search-form button {
+  padding: 8px 12px;
+  background-color: #d9fcee;
+  height: 50px;
+  color: #025e43;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.search-form button:hover {
+  background-color: white;
+}
+
+nav a:hover {
+  color: #d9fcee;
+  border-bottom: 2px solid #d9fcee;
+}
+/*end header style */
+
+/* start footer style */
+.footer {
+  background-color: #025e43;
+  height: 200px;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+}
+
+.footer p {
+  display: block;
+  color: white;
+  font-size: 16px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.footer img{
+    width: 24px;
+    height: 24px;
+    padding-right: 5px;
+    display: inline;
+    vertical-align: middle;
+}
+/* end footer style */
+
+/* start main page style */
+main,
+div.head {
+  background-color: #e8dcc5;
+  padding-top: 100px;
+}
+
+h1,
+h2,
+h3 {
+  color: #8c1d28;
+}
+
+h1,
+.container {
+  margin: 0px 25px;
+}
+
+h1 {
+  font-size: 40px;
+  padding: 10px 0px 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+main p,
+blockquote {
+  font-size: 19px;
+
+  margin-bottom: 20px;
+}
+
+.intro li {
+  margin-left: 40px;
+  font-size: 17px;
+}
+
+.intro ul li::marker {
+  color: #8c1d28;
+}
+
+.intro {
+  margin-bottom: 30px;
+}
+
+hr {
+  opacity: 0.2;
+  margin-bottom: 20px;
+}
+
+.Attractions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.attraction {
+  margin-bottom: 20px;
+}
+
+.attraction img {
+  width: 60%;
+  height: 400px;
+  margin: 20px 0px;
+  border-radius: 10px;
+  right: 100px;
+}
+/* end main page style */
+
+
+/*start about page */
+.about {
+  background-color: #e8dcc5;
+  margin: 0px 25px;
+}
+
+.about h2,
+.about h3,
+.about p,
+.about ul,
+.about li {
+  padding: 10px;
+  line-height: 30px;
+}
+
+.about ol,
+.about ul {
+  margin-left: 30px;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+/* end about page */
+
+/* start contact page */
+.contact {
+  background-color: #e8dcc5;
+  margin: 0px auto;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.contact h2,
+.contact p,
+.contact form {
+  padding: 10px;
+  line-height: 30px;
+}
+
+.inp {
+  background-color: #e4ddcd;
+  border: 1px solid #8c1d28;
+  border-radius: 10px;
+  display: block;
+  width: 400%;
+  height: 36px;
+  padding: 10px;
+}
+
+.inp:focus {
+  outline: none;
+  border: 2px solid #8c1d28;
+}
+
+.contact textarea {
+  display: block;
+  height: 100px;
+  resize: none;
+  overflow: hidden;
+}
+
+#send {
+  height: 40px;
+  width: 50%;
+  background-color: #e4ddcd;
+  border: 1px solid #8c1d28;
+  border-radius: 10px;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+#send:focus {
+  font-size: 19px;
+  border: 2px solid #8c1d28;
+}
+/* end contact page */
+
+/* start gallery page */
+.gallery{
+  background-color: #e8dcc5;
+  margin: 0px auto;
+  width: 70%;
+}
+
+.gallery h2, .gallery p{
+  padding: 10px;
+  line-height: 30px;
+}
+
+.cards{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: space-between;
+}
+
+.gallery-cards img{
+    max-width: 450px;
+    min-width: 45%;
+    height: 400px;
+    border: 1px solid #fff;
+}
+
+.link a {
+    color: #8c1d28;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+/* end gallery page */
