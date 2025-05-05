@@ -13,21 +13,24 @@
   <body>
     <!-- header start -->
     <header>
-        <div class="header">
-            <nav class="navigation">
-                    <img src="assets/images/logo.jpg" alt="Afghanistan Attractions" class="logo"/>
-                    <a href="index.html">HOME</a>
-                    <a href="about.html">ABOUT</a>
-                    <a href="contact.html">CONTACT</a>
-                    <a href="gallery.html">GALLERY</a>
+  <nav class="navigation">
+    <img src="assets/images/logo.jpg" alt="Afghanistan Attractions" class="logo" />
+    <ul class="nav-links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+      <li><a href="gallery.html">GALLERY</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
 
-                    <form class="search-form" action="/search" method="GET">
-                        <input type="search" name="q" placeholder="Search..." />
-                        <button type="submit">Go</button>
-                    </form>
-            </nav>
-        </div>
+  </nav>
     </header>
+
+    <script>
+      function toggleMenu() {
+        document.querySelector('.nav-links').classList.toggle('active');
+      }
+    </script>
     <!-- header end -->
 
     <!-- main start -->
