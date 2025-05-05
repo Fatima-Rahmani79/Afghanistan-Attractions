@@ -15,26 +15,25 @@
 
   <body>
     <!-- start header -->
-    <header>
-      <div class="header">
-        <nav class="navigation">
-          <img
-            src="assets/images/logo.jpg"
-            alt="Afghanistan Attractions"
-            class="logo"
-          />
-          <a href="index.html">HOME</a>
-          <a href="about.html">ABOUT</a>
-          <a href="contact.html">CONTACT</a>
-          <a href="gallery.html">GALLERY</a>
+     <header>
+  <nav class="navigation">
+    <img src="assets/images/logo.jpg" alt="Afghanistan Attractions" class="logo" />
+    <ul class="nav-links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+      <li><a href="gallery.html">GALLERY</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
 
-          <form class="search-form" action="/search" method="GET">
-            <input type="search" name="q" placeholder="Search..." />
-            <button type="submit">Go</button>
-          </form>
-        </nav>
-      </div>
+  </nav>
     </header>
+
+    <script>
+      function toggleMenu() {
+        document.querySelector('.nav-links').classList.toggle('active');
+      }
+    </script>
     <!-- end header -->
 
     <!-- start main -->
@@ -67,32 +66,17 @@
         <section class="contactform">
           <form action="#">
             <label for="name">Name:</label> <br />
-            <input type="text" id="name" name="name" required class="inp" />
-            <br />
+            <input type="text" id="name" name="name" required class="input" /> <br />
             <label for="email">Email:</label> <br />
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              class="inp"
-            /><br />
+            <input type="email" id="email" name="email"required class="input"/> <br />
             <label for="message">Message:</label> <br />
-            <textarea
-              id="message"
-              name="message"
-              required
-              class="inp"
-            ></textarea>
-            <br />
+            <textarea id="message" name="message" required class="input"></textarea> <br />
             <label for="gender">Gender:</label> <br />
             <input type="radio" id="male" name="gender" value="Mele" />
             <label for="male">Male</label>
             <input type="radio" id="female" name="gender" value="Female" />
-            <label for="female">Female</label> <br />
-            <br />
-            <input type="submit" value="Send" id="send" />
-            <br />
+            <label for="female">Female</label> <br /> <br />
+            <input type="submit" value="Send" id="send" /> <br />
           </form>
         </section>
         <!-- end contactform section -->
