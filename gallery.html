@@ -12,22 +12,25 @@
 <body>
 
     <!-- header start -->
-    <header>
-        <div class="header">
-            <nav class="navigation">
-                    <img src="assets/images/logo.jpg" alt="Afghanistan Attractions" class="logo"/>
-                    <a href="index.html">HOME</a>
-                    <a href="about.html">ABOUT</a>
-                    <a href="contact.html">CONTACT</a>
-                    <a href="gallery.html">GALLERY</a>
+     <header>
+  <nav class="navigation">
+    <img src="assets/images/logo.jpg" alt="Afghanistan Attractions" class="logo" />
+    <ul class="nav-links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+      <li><a href="gallery.html">GALLERY</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
 
-                    <form class="search-form" action="/search" method="GET">
-    <input type="search" name="q" placeholder="Search..." />
-    <button type="submit">Go</button>
-  </form>
-            </nav>
-        </div>
+  </nav>
     </header>
+
+    <script>
+      function toggleMenu() {
+        document.querySelector('.nav-links').classList.toggle('active');
+      }
+    </script>
     <!-- header end -->
 
     <!-- main start -->
@@ -42,7 +45,7 @@
 
             <!-- start gallery-cards section -->
             <section class="gallery-cards">
-                <div class="cards">
+                
                     <figure>
                         <img src="assets/images/bandAmir.jpg" alt="Band-e Amir">
                         <figcaption>Band-e Amir, Bamiyan</figcaption>
@@ -52,9 +55,7 @@
                         <img src="assets/images/Panjshir-Valley.jpg" alt="Panjshir valley">
                         <figcaption>Panjshir-Valley, Panjshir</figcaption>
                     </figure>
-                </div>
                 
-                <div class="cards">
                     <figure>
                         <img src="assets/images/darolaman.jpg" alt="Darul Aman, Kabul">
                         <figcaption>Darul Aman, Kabul</figcaption>
@@ -64,8 +65,7 @@
                        <img src="assets/images/kabul2.jpg" alt="Holy Shrine, Kabul">
                         <figcaption>Holy Shrine, Kabul</figcaption>
                     </figure>
-                </div>
-                <div class="cards">
+                
                     <figure>
                         <img src="assets/images/khwaja herat.jpg" alt="Khwaja Abdullah Ansari, Herat">
                         <figcaption>Khwaja Abdullah Ansari Shrine, Herat</figcaption>
@@ -75,16 +75,13 @@
                         <img src="assets/images/qala herat.jpg" alt="Qala Ikhtyarrudin, Herat">
                         <figcaption>Qala Ikhtyarrudin, Herat</figcaption>
                     </figure>
-                </div>
+                
                 </div>
             </section>
             <!-- end gallery-cards section -->
 
         </div>
-        <div class="link">
-            <a id="home" href="index.html">Home</a>
-        </div>
-    </main>
+    </main> 
     <!-- main end -->
 
     <!-- footer start -->
